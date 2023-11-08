@@ -88,8 +88,8 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
     return (
       <div className="mt-24 text-center">
         <PageTitle>
-          Under Construction{' '}
-          <span role="img" aria-label="roadwork sign">
+          Em construção{' '}
+          <span role="img" aria-label="placa de sinalização de obras na estrada">
             🚧
           </span>
         </PageTitle>
