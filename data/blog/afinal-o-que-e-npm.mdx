@@ -1,0 +1,117 @@
+---
+title: Afinal, o que é npm?
+date: '2023-11-13'
+tags: ['node', 'javascript', 'packages']
+draft: false
+summary: Entenda como funciona o famoso gerenciador de pacotes do Node.js
+---
+
+`npm init`
+
+`npm install`
+
+`npm run dev`
+
+Todos já usamos esses comandos várias vezes, mas o que realmente é o `npm` e o que esses comandos fazem?
+
+Quando estou aprendendo, busco entender como as coisas funcionam “por baixo dos panos”, e por muitas vezes eu notei que estava simplesmente copiando e colando comandos no terminal sem ao menos me perguntar o que esse comando realmente está fazendo.
+
+Que atire a primeira pedra quem nunca executou um `npm i express` seguindo um tutorial sem ter ideia do que estava fazendo 😅.
+
+Para começar, npm é uma sigla para Node Package Manager, traduzindo, Gerenciador de Pacotes do Node.
+
+Mas para entender tudo isso vamos por partes, primeiro vamos entender o que é um pacote.
+
+## O que é um pacote
+
+É um conjunto de arquivos que entrega um conjunto de funcionalidades, podendo ser um biblioteca, um framework, um programa etc.
+
+Um exemplo: Existe pacote do React, que é uma biblioteca de funcionalidades para lidar com a componentização de elementos em interfaces web. O React em si é a biblioteca, e a forma como ele é distribuído é como um pacote. Sendo assim eu posso instalá-lo no meu computador e ter acesso a essa biblioteca para usá-la no meu projeto.
+
+Agora que já sabemos o que é um pacote vamos entender o que é um gerenciador de pacotes.
+
+## O que é um gerenciador de pacotes
+
+Na maioria das vezes quando estamos trabalhando em um projeto, seja um site, uma API ou um aplicativo, nós usamos vários e vários pacotes, e pra organizar tudo isso existem os gerenciadores.
+
+Um gerenciador de pacotes é uma ferramenta que nos permite instalar, atualizar, configurar e remover pacotes de um sistema de forma fácil.
+
+No universo javascript o gerenciador de pacotes mais conhecido é o npm, mas além do npm, existe o `yarn`, o `pnpm`, o `bun`… e fora do universo javascript existem vários outros gerenciadores, por exemplo, pra quem usa a linguagem python existe o `pip`, pra quem usa linux Debian ou Ubuntu existe o `apt`, e por aí vai… provavelmente existem centenas de gerenciadores de pacotes.
+
+Mas o foco aqui é falar sobre o npm.
+
+## O que é o npm
+
+O npm é o gerenciador de pacotes do node, ou seja, se você vai criar um projeto javascript e vai precisar usar algum pacote javascript, a forma mais fácil de organizar tudo isso é através de um gerenciador de pacotes. Dessa forma você pode facilmente gerenciar o seu projeto, instalar novos pacotes, gerenciar as dependências, fazer o versionamento do projeto, configurar scripts personalizados para executar o projeto e por aí vai. Sendo assim, se for desenvolver um site moderno, atualmente é quase obrigatório usar um gerenciador de pacotes, seja o npm, ou qualquer outro de sua preferência.
+
+## Onde aprender tudo sobre npm
+
+Aqui vai uma dica: Sempre que quiser aprender alguma coisa coisa sobre alguma tecnologia, o melhor lugar para procurar é na própria documentação dessa tecnologia.
+
+Para aprender mais detalhes sobre o npm, nada melhor do que a própria documentação da ferramenta para usarmos como referência:
+
+https://docs.npmjs.com/
+
+## Como instalar o npm
+
+Como o npm é o gerenciador de pacotes do Node, por padrão quando instalamos o Node o npm também é instalado.
+
+A forma como eu recomendo instalar o Node é usando o `nvm`, não confunda com npm, `nvm` é a sigla para Node Version Manager, traduzindo, Gerenciador de Versão do Node. Com o nvm é possível instalar e usar de forma fácil várias versões do Node, e consequentemente, do npm.
+
+Deixo aqui o link do repositório do nvm para quem quiser instalar:
+
+[Repositório do nvm](https://github.com/nvm-sh/nvm)
+
+Para instalar o nvm, siga o passo a passo da seção [Installing and Updating](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Depois de ter o nvm instalado, execute o comando `nvm install node`, isso vai instalar o node juntamente com o npm.
+
+Para verificar se o npm está instalado no computador basta abrir o terminal e executar o comando `npm` e se quiser saber a versão que está instalada `npm --version` e vai aparecer qual a versão que você está usando.
+
+## Comandos básicos do npm
+
+`npm --help`
+
+Mostra o uso dos comandos básicos
+
+Aliás, aqui vai mais uma dica: Sempre que tiver com alguma dúvida use a flag `--help`
+
+Execute `<qualquer-comando> --help`, isso pode te salvar.
+
+`npm init`
+
+Cria o arquivo `package.json`
+
+`npm install <nome-do-pacote>`
+
+Instala o pacote específico
+
+`npm update <nome-do-pacote>`
+
+Atualiza o pacote específico
+
+`npm uninstall <nome-do-pacote>`
+
+Desinstala o pacote específico
+
+`npm install`
+
+Instala todas as dependências do seu projeto
+
+`npm run <nome-do-script>`
+
+Executa o script específico
+
+## Conclusão
+
+Espero que este post tenha ajudado a esclarecer o que é o npm e como ele funciona.
+
+Agora que você já sabe o básico, nada melhor do que testar na prática.
+
+Boas práticas!
+
+## Bônus
+
+Como um bônus eu deixo aqui o curso gratuito de npm do Daniel Berg
+
+[Curso de NPM](https://www.youtube.com/playlist?list=PLbV6TI03ZWYVjruiKLeb3m2rEXeYsG6RQ)
