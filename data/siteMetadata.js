@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'Aqui eu falo sobre desenvolvimento web e compartilho o que tenho aprendido',
   language: 'pt-br',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app', // TODO: Update this URL
+  siteUrl: 'https://johanvilela.dev.br',
   siteRepo: 'https://github.com/johanvilela/blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/social-banner.png',
