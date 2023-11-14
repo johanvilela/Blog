@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app', // TODO: Update this URL
   siteRepo: 'https://github.com/johanvilela/blog',
   siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/social-banner.png',
   // mastodon: 'https://mastodon.social/@mastodonuser',
   // email: 'contato@johanvilela.com.br',
   github: 'https://github.com/johanvilela',
