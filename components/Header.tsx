@@ -16,9 +16,7 @@ const Header = () => {
               <Logo />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden text-2xl font-semibold sm:block">
-                {siteMetadata.headerTitle}
-              </div>
+              <div className="text-2xl font-semibold">{siteMetadata.headerTitle}</div>
             ) : (
               siteMetadata.headerTitle
             )}
