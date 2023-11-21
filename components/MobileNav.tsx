@@ -56,17 +56,16 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
+        <nav className="fixed mt-8 h-full w-full">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
-              <Link
-                href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                onClick={onToggleNav}
-              >
-                {link.title}
-              </Link>
-            </div>
+            <Link
+              href={link.href}
+              className="block px-12 py-4 text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+              onClick={onToggleNav}
+              key={link.title}
+            >
+              {link.title}
+            </Link>
           ))}
         </nav>
       </div>
