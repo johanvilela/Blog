@@ -25,6 +25,7 @@ export default function Comments({ slug }: { slug: string }) {
             latest: 'Recentes',
             hottest: 'Curtidos',
             sticky: 'Fixado',
+            refresh: 'Recarregar',
           }}
           dark={theme === 'dark'}
           copyright={false}
